@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>领养申请</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .apply{
+            height: 500px;
+            width: 1000px;
+            border: solid 1px gray;
+            /* background-color: peachpuff; */
+        }
+        .title{
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            background-color: orange;
+            color: white;
+            font-size: 20px;
+        }
+        .apply ul{
+            margin-left: 20px;
+            padding-top: 10px;
+
+        }
+        .apply li{
+            margin-top: 10px;
+            margin-left: 10px;
+            font-size: 22px;
+        }
+        .apply input{
+            width: 300px;
+            height: 40px;
+            border-radius: 10px;
+            border: none;
+            border: solid 2px gray;
+            font-size: 20px;
+            margin-left: 20px;
+
+        }
+        input[type="radio"]{
+            width: 20px;
+            height: 16px;
+        }
+        .apply ul li:nth-child(7) em:first-child
+        {
+            margin-right: 42px;
+        }
+        .apply ul li:nth-child(8) em:first-child
+        {
+            margin-right: 20px;
+        }
+        .apply ul li:last-child input
+        {
+            width: 100px !important;
+            margin-left: 43%;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="header w">
+        <div class="logo">
+            <img src="images/logo.png">
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="home.html">首页</a><li>
+                <li ><a href="donate.html">捐赠</a><li>
+                <li class="point"><a href="#">领养</a><li>
+                <li><a href="seek.html">寻回</a><li>
+                <li><a href="Release for adoption">发布送养</a><li>
+                    <li><a href="#">发布寻找</a><li>
+                    
+
+                <li ><a href="Shopping.html">购物资助</a><li>
+                
+               
+            </ul>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="输入关键词" >
+            <button></button>
+        </div>
+    <!-- <div class="user"> -->
+        <a class="user" href="applyed.html" target="else"><img src="images/user.png"></a>
+       
+    <!-- </div> -->
+    </div>
+    <div class="apply w">
+        <div class="title">领养申请表</div>
+        <form action="">
+            <ul>
+                <li><em> 姓名:</em><input type="text" required="required"></li>
+                <li><em> 年龄:</em><input type="number" required="required"></li>
+                <li><em> 电话:</em><input type="number" required="required"></li>
+                <li><em> 家庭住址:</em><input type="text" required="required"></li>
+                <li>
+                    <em> 性别:</em>
+                    <input type="radio" name="sex" value="male"><em>男</em>
+                    <input type="radio" name="sex" value="female"><em>女</em></li>
+                    <li>
+                        <em> 房屋:</em>
+                        <input type="radio" name="house" value="own"><em>自己买的房</em>
+                        <input type="radio" name="house" value="rent"><em>租房</em>
+                    </li>
+                    <li>
+                        <em> 是否已婚:</em>
+                        <input type="radio" name="marriage" value="yes"><em>是</em>
+                        <input type="radio" name="marriage" value="no"><em>否</em>
+                    </li>
+                    <li>
+                        <em> 是否有小孩:</em>
+                        <input type="radio" name="baby" value="yes"><em>是</em>
+                        <input type="radio" name="baby" value="no"><em>否</em>
+                    </li>
+                
+                <li><input type="submit" id="save" value="申请">
+                </li>
+            </ul>  
+           
+        </form>
+    </div>
+</body>
+</html>

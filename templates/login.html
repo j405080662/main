@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            /* width:100%;
+            height: 100%; */
+            background-image: url("images/loginbg.jpg");
+            background-size:cover;
+            background-repeat: no-repeat;
+
+        }
+        a{
+            text-decoration: none;
+        }
+        .login{
+            position: relative;
+            left:54%;
+            top:55%;
+            margin-top: 190px;
+            width: 510px;
+            height: 350px;
+            border-radius: 20px;
+            background-color:rgba(228,203,7)
+        }
+        input[type="tel"],
+        input[type="password"],
+        input[type="submit"]
+        {
+            float: left;
+            width: 350px;
+            height: 50px;
+            margin-left: 79px;
+            font-size: 20px;
+            outline: none;
+            border: 1px solid #af5899;
+            border-radius: 8px;
+
+        }
+        input:hover{
+
+            border-bottom:3px solid#af5899;
+        }
+        input[type="tel"]
+        {
+            margin-top:50px;
+        }
+        input[type="password"]
+        {
+            margin-top: 50px;
+        }
+        input[type="submit"]
+        {
+            width: 100px;
+            height: 40px;
+            margin-top: 80px;
+            margin-left: 195px;
+        }
+
+        .userlogin{
+            font-size: 20px;
+            position: absolute;
+            top:230px;
+            left: 130px;
+
+        }
+        .adminlogin{
+            font-size: 20px;
+            position: absolute;
+            top: 230px;
+            left: 300px;
+
+        }
+        p{
+            position: absolute;
+            font-size: 18px;
+            margin-top: 20px;
+            left: 65%;
+        }
+        input[type="submit"]:hover {
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="login">
+        <form>
+            <input type="tel" placeholder="请输入登录账号" required="required">
+            <input type="password" placeholder="请输入登录密码" required="required">
+            <div class="userlogin"><input type="radio" name="role" value="用户">用户</div>
+            <div class="adminlogin"><input type="radio" name="role" value="管理员">管理员</div>
+
+            <input type="submit" value="登录">
+        </form>
+
+    </div>
+    <p>没有账号？<a href="register.html">立即注册！</a></p>
+</body>
+</html>

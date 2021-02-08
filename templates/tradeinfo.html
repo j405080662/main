@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>账户设置 个人交易信息</title>
+    <link rel="stylesheet" href="settting.css">
+    <style>
+    .maincontent p{
+            margin-top: 10px;
+            padding: 10px 30px;
+            font-size: 20px;
+            background-color:rgba(243, 248, 254);
+            border: 1px solid #af5899;
+            border-bottom: none;
+        }
+        .maincontent ul{
+            width: 700px;
+            height: 480px;
+            padding-top: 30px;
+            padding-left: 30px;
+            /* background-color: white; */
+            border: 1px solid #af5899;
+            border-top: none;
+        }
+     
+        .maincontent li{
+            margin-bottom: 30px;
+            height: 36px;
+
+        }
+        .maincontent li:nth-child(1)::after
+        {
+            content:"真实姓名不能修改！";
+            color: rgba(255, 102, 0);
+        }
+        .maincontent li:nth-child(3)::after
+        {
+            content:"真实性别不能修改！";
+            color: rgba(255, 102, 0);
+        }
+        .maincontent li:nth-child(4)::after
+        {
+            content:"真实生日不能修改！";
+            color: rgba(255, 102, 0);
+        }
+
+        em{
+            font-size: 20px;
+        }
+      
+        .maincontent input{
+            outline: none;
+            border: 1px solid #af5899;
+            border-radius: 8px;
+            width: 200px;
+            height: 35px;
+            font-size: 18px;
+            margin-left: 16px;
+        }
+        .maincontent ul li:nth-child(3) input,
+        .maincontent ul li:nth-child(4) input{
+            margin-left: 54px !important;
+        }
+        .maincontent ul li:nth-child(6) input
+        {
+            width: 70px;
+        }
+        .maincontent ul li:nth-child(6) input:last-child{
+            width: 250px;
+        }
+        .maincontent input:hover{
+            border-bottom:3px solid#af5899;
+        }
+        #confirm,
+        #cancel{
+            float: left;
+            width: 100px !important;
+            height: 40px;
+        }
+        #confirm{
+            margin-left: 29%;
+        }
+    </style>
+</head>
+<body>
+    <div class="plusheader">
+        <div class="header w">
+            <div class="logo">
+                <img src="images/logo.png">
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="applyed.html">我的首页</a><li></li>
+                    <li class="point"><a href="personaldata.html">账户设置</a><li>              
+                </ul>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="输入关键词" >
+                <button></button>
+            </div>
+            <button class="logout">注销登录</button>
+      </div>
+        </div>
+        <div class="content w">
+            <div class="catalogue">
+                <ul class="adopt">
+                    <li>账号管理</li>
+                    <li><a href="personaldata.html">个人资料</a></li>
+                    <li ><a  href="address.html">收货地址</a></li>
+                    <li  class="point"><a  href="tradeinfo.html">个人交易信息</a></li>
+
+                </ul>
+              
+            </div>
+            <div class="maincontent">
+                <p>个人交易信息</p>
+                <form action="">
+                    <ul>
+                        <li><em>真实姓名:<input type="text"></em></li>
+                        <li><em>登录邮箱:<input type="text"></em></li>
+                        <li><em>性别:</em><input type="text"></li>
+                        <li>
+                            <em> 生日:<input type="text"></em>
+                        
+                        <li>
+                            <em>邮政编码:<input type="text"></em>                         
+                        </li>
+                        <li><em>详细地址:<input type="text"><em>省</em>
+                        <input type="text"><em>市</em> <input type="text">             
+                        <li><input type="submit" id="confirm" value="确定">
+                            <input type="submit" id="cancel" value="取消">
+                        </li>
+                    </ul>  
+
+
+                </form>
+              
+            </div>
+        </div>
+</body>
+</html>

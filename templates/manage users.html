@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户管理</title>
+    <link rel="stylesheet" href="admin.css">
+    <style>
+        .item,
+    .column{
+        height: 30px;    
+        width: 1020px;
+        line-height: 30px;
+        border: solid 1px gray;
+        margin-left: 10px;
+    }
+    .column{
+        height: 40px;
+        line-height: 40px;
+        font-weight: 600;
+        color:rgb(17,138,219);
+    
+    }
+    .username{
+        width: 90px;
+        margin-left: 10px;
+   
+
+    }
+
+    .username{
+        width: 150px;
+    }
+    .useraccount{
+        width: 120px;
+    }
+    .time{
+        width: 95px;
+    }
+    .item button{
+     
+            padding: 5px 10px;
+          
+            background-color: rgb(102,182,255);
+            color: white;
+            border: none;
+            border-radius: 3px;
+            margin-left: 5px;
+        }
+        .item button:hover{
+            background-color: rgb(17,138,219);
+        }
+    .time,
+    .username,
+    .useraccount,
+    .item button{
+        float: left;
+    }
+    .time,
+    .useraccount,
+    .item button{
+        margin-left:100px;
+    }
+    </style>
+</head>
+<body>
+    <div class="title w">
+        <p>宠物之家——动物资助领养平台管理系统</p></div>
+    <div class="content w">
+    <div class="catalogue">
+        <a href="check.html">待审核申请</a>
+        <a class="point"  href="manage users.html">领养用户管理</a>
+        <a href="manage adoption.html">送养贴管理</a>
+        <a href="manage seek.html">寻回贴管理</a>
+        <a href="shipments.html">待发货订单</a>
+        <a href="manage income.html">收入管理</a>
+    </div>
+    <div class="head">
+        <div class="search">
+            <input type="text" placeholder="输入关键词" >
+            <button></button>
+        </div>
+    
+        <button class="logout">注销登录</button>
+      </div>
+    <div class="maincontent">
+
+    
+        <div class="column">
+            <div class="username">用户名</div>
+            <div class="useraccount">账号</div>
+            <div class="time">领养时间</div>        
+            <!-- <button>查看领养日志</button>
+            根据领养日志的内容发现不合格的领养人，将会线下联系他索要回动物，并且将其拉入黑名单，将不能登录该网站 
+            <button>拉入黑名单</button> -->
+
+
+        </div>
+        <div class="item">
+            <div class="username">Dawn33333</div>
+            <div class="useraccount">12345678909</div>
+            <div class="time">2022-29-28</div>        
+            <button>查看领养日志</button>
+            <!-- 根据领养日志的内容发现不合格的领养人，将会线下联系他索要回动物，并且将其拉入黑名单，将不能登录该网站 -->
+            <button>拉入黑名单</button>
+
+
+        </div>
+
+
+
+        </div>
+    </div>
+
+    </div>
+</body>
+</html>

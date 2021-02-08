@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>账户设置 个人资料</title>
+    <link rel="stylesheet" href="settting.css">
+    <style>
+                .maincontent p{
+            margin-top: 10px;
+            padding: 10px 30px;
+            font-size: 20px;
+            background-color:rgba(243, 248, 254);
+            border: 1px solid #af5899;
+            border-bottom: none;
+        }
+        .maincontent ul{
+            width: 700px;
+            height: 480px;
+            padding-top: 50px;
+            padding-left: 30px;
+            /* background-color: white; */
+            border: 1px solid #af5899;
+            border-top: none;
+        }
+        .maincontent li{
+            margin-bottom: 30px;
+            height: 41px;
+
+        }
+        em{
+            font-size: 24px;
+        }
+        .maincontent li::before{
+            content: "*";
+            color: gray;
+        }
+        .maincontent li:nth-child(3):before,
+        .maincontent li:nth-child(6):before
+        {
+            content:none;
+        }
+        .maincontent li:last-child{
+            margin-top: 60px;
+            margin-left: 24%;
+        }
+        .maincontent input{
+            outline: none;
+            border: 1px solid #af5899;
+            border-radius: 8px;
+            width: 250px;
+            height: 40px;
+            font-size: 18px;
+            margin-left: 42px;
+        }
+        .maincontent li:nth-child(3) input{
+            margin-left:8px;
+        }
+        .maincontent input[type="radio"]{
+            width: 20px;
+            height: 16px;
+        }
+
+        .maincontent input:hover{
+            border-bottom:3px solid#af5899;
+}
+      
+        #save,
+        #cancel{
+            float: left;
+            width: 100px !important;
+            height: 40px;
+        }
+         
+    </style>
+</head>
+<body>
+    <div class="plusheader">
+        <div class="header w">
+            <div class="logo">
+                <img src="images/logo.png">
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="applyed.html">我的首页</a><li></li>
+                    <li class="point"><a href="personaldata.html">账户设置</a><li>              
+                </ul>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="输入关键词" >
+                <button></button>
+            </div>
+            <button class="logout">注销登录</button>
+      </div>
+        </div>
+        <div class="content w">
+            <div class="catalogue">
+                <ul class="adopt">
+                    <li>账号管理</li>
+                    <li class="point"><a href="personaldata.html">个人资料</a></li>
+                    <li><a  href="address.html">收货地址</a></li>
+                    <li><a  href="tradeinfo.html">个人交易信息</a></li>
+
+                </ul>
+              
+            </div>
+            <div class="maincontent">
+                <p>个人资料</p>
+                <form action="">
+                    <ul>
+                        <li><em> 邮箱:</em><input type="email" required="required"></li>
+                        <li><em> 昵称:</em><input type="text" required="required"></li>
+                        <li><em>  真实姓名:</em><input type="text"></li>
+                        <li>
+                            <em> 性别:</em>
+                            <input type="radio" name="sex" value="male"><em>男</em>
+                            <input type="radio" name="sex" value="female"><em>女</em></li>
+                        <li>
+                            <em> 生日:</em>
+                            <input type="date" required="required">
+                        </li>                
+                        <li><input type="submit" id="save" value="保存">
+                            <input type="submit" id="cancel" value="取消"></li>
+                    </ul>  
+                   
+                </form>
+              
+            </div>
+        </div>
+</body>
+</html>

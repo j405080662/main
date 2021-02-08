@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>账户设置 个人资料</title>
+    <link rel="stylesheet" href="settting.css">
+    <style>
+                .maincontent p{
+            margin-top: 10px;
+            padding: 10px 30px;
+            font-size: 20px;
+            background-color:rgba(243, 248, 254);
+            border: 1px solid #af5899;
+            border-bottom: none;
+        }
+        .maincontent p::after{
+            margin-left: 30px;
+            content: "最多可添加三条收货信息";
+            font-size: 16px;
+            color: gray;
+        }
+        .box{
+            width: 998px;
+            height: 560px;
+            padding-top: 10px;
+            border: 1px solid #af5899;
+            border-top: none;
+        }
+       .box ul{
+            width: 950px;
+            height: 178px;
+            margin-bottom: 5px;
+            margin-left: 2.5%;
+            border: 1px solid #af5899;
+        }
+        .box ul li {
+            margin:15px 10px;
+            height: 30px;
+        }
+        .box ul li:last-child{
+            height: 30px;
+            margin-right: 30px;
+            margin-top: 20px;
+        }
+        .box input{
+            outline: none;
+            border: 1px solid #af5899;
+            border-radius: 8px;
+            width: 200px;
+            height: 26px;
+            font-size: 16px;
+            margin-left: 20px;
+        }
+        .box li:nth-child(1) input{
+            margin-left: 0px;
+        }
+        .box li:nth-child(3) input{
+           width: 650px;
+        }
+        .default,
+        .edit{
+            float:right;
+            margin-left:15px;
+            background-color: transparent;
+            border: none;
+            color: rgb(0, 129, 198);
+
+        }
+        .default:hover,
+        .edit:hover{
+            color:rgb(243, 2, 19);
+        }
+        em{
+            font-size: 20px;
+            color:gray;
+        }
+
+  
+         
+    </style>
+</head>
+<body>
+    <div class="plusheader">
+        <div class="header w">
+            <div class="logo">
+                <img src="images/logo.png">
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="applyed.html">我的首页</a><li></li>
+                    <li class="point"><a href="personaldata.html">账户设置</a><li>              
+                </ul>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="输入关键词" >
+                <button></button>
+            </div>
+            <button class="logout">注销登录</button>
+      </div>
+        </div>
+        <div class="content w">
+            <div class="catalogue">
+                <ul class="adopt">
+                    <li>账号管理</li>
+                    <li ><a href="personaldata.html">个人资料</a></li>
+                    <li class="point"><a  href="address.html">收货地址</a></li>
+                    <li><a  href="tradeinfo.html">个人交易信息</a></li>
+
+                </ul>
+              
+            </div>
+            <div class="maincontent">
+
+                <p>收货地址</p>
+                <ul class="box">
+                    <form>
+                        <ul>
+                            <li><em>收货人：<input type="text" required="required"></em></li>
+                            <li><em>手机：<input type="text" required="required"></em></li>
+                            <li><em>地址：<input type="text" required="required"></em></li>
+                            
+                            <li>
+                                <button class="edit">保存编辑</button>
+                                <button class="default">设为默认</button>
+
+                            </li>
+                        </ul>
+
+
+                    </form>
+
+                    <form>
+                        <ul>
+                            <li><em>收货人：<input type="text" required="required"></em></li>
+                            <li><em>手机：<input type="text" required="required"></em></li>
+                            <li><em>地址：<input type="text" required="required"></em></li>
+                            
+                            <li>
+                                <button class="edit">保存编辑</button>
+                                <button class="default">设为默认</button>
+
+                            </li>
+                        </ul>
+
+
+                    </form>
+                    <form>
+                        <ul>
+                            <li><em>收货人：<input type="text" required="required"></em></li>
+                            <li><em>手机：<input type="text" required="required"></em></li>
+                            <li><em>地址：<input type="text" required="required"></em></li>
+                            
+                            <li>
+                                <button class="edit">保存编辑</button>
+                                <button class="default">设为默认</button>
+
+                            </li>
+                        </ul>
+
+
+                    </form>
+                </ul>
+               
+              
+            </div>
+        </div>
+</body>
+</html>

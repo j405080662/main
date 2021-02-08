@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style: none;
+        }
+
+        em{
+            font-style: normal;
+            font-size: 22px;
+        }
+        body{
+            /* width:100%;
+            height: 100%; */
+            background-image: url("images/loginbg.jpg");
+            background-size:cover;
+            background-repeat: no-repeat;
+
+        }
+        ul{
+            width: 420px;
+            height:480px ;
+        }
+        input::placeholder{
+            color: gray;
+
+}
+        .register{
+            position: relative;
+            left:57.3%;
+            margin-top: 180px;
+            padding-top:20px;
+            width: 420px;
+            height: 480px;
+            border-radius: 20px;
+            background-color:rgba(228,203,7)
+        }
+        .register ul li{
+            margin-left: 10px;
+            margin-top: 18px;
+            height: 36px;
+        }
+        .register ul li input{
+            width: 260px;
+            height: 35px;
+        }
+        .register ul li input[type="radio"]{
+            width: 20px;
+            height: 16px;
+        }
+        input{
+            outline: none;
+            border: 1px solid #af5899;
+            border-radius: 8px;
+            font-size: 18px;
+            margin-left: 42px;
+        }
+        input:hover{
+            border-bottom:3px solid#af5899;
+}
+        ul li:nth-child(7) input{
+            margin-left: 0;
+        }
+        input[type="submit"]{
+            width: 100px !important;
+            height: 40px;
+            margin: 25px 38%;
+        }
+        input[type="submit"]:hover {
+            cursor: pointer;
+        }
+
+        
+        
+
+
+    </style>
+</head>
+<body>
+
+    <div class="register">
+        <form>
+            <ul>
+                <li>
+                    <em>账号:</em>
+                    <input type="tel" required="required" placeholder="请填写手机号">
+                </li>
+                <li>
+                    <em>邮箱:</em>
+                    <input type="email" required="required">
+                    
+                </li>
+                <li>
+                    <em>昵称:</em>
+                    <input type="text" required="required">
+                </li>
+                <li>
+                    <em>性别:</em>
+                        <input type="radio" name="sex" value="male"><em>男</em>
+                    <input type="radio" name="sex" value="female"><em>女</em>
+
+                </li>
+                <li>
+                    <em>生日:</em>
+                    <input type="date" required="required">
+                </li>
+                <li>
+                    <em>密码:</em>
+                    <input type="password" required="required">
+                </li>
+                <li>
+                    <em>确认密码:</em>
+                    <input type="text" required="required">
+                </li>
+                <!-- <li>
+                    <input type="submit" value="注册">
+                </li> -->
+                <input type="submit" value="注册">
+            </ul>
+        </form>
+
+    </div>
+
+</body>
+</html>

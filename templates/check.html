@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>待审核申请</title>
+    <link rel="stylesheet" href="admin.css">
+    <style>
+   
+    .item,
+    .column{
+        height: 30px;    
+        width: 1020px;
+        line-height: 30px;
+        border: solid 1px gray;
+        margin-left: 10px;
+    }
+    .column{
+        height: 40px;
+        line-height: 40px;
+        font-weight: 600;
+        color:rgb(17,138,219);
+    
+    }
+    .time{
+        width: 95px;
+        margin-left: 10px;
+   
+
+    }
+    .username{
+        width: 150px;
+    }
+    .useraccount{
+        width: 120px;
+    }
+    .type{
+        width: 65px;
+    }
+    .item button{
+     
+            padding: 5px 10px;
+          
+            background-color: rgb(102,182,255);
+            color: white;
+            border: none;
+            border-radius: 3px;
+            margin-left: 5px;
+        }
+        .item button:hover{
+            background-color: rgb(17,138,219);
+        }
+    .time,
+    .username,
+    .useraccount,
+    .type,
+    .item button{
+        float: left;
+    }
+    .username,
+    .useraccount,
+    .type,
+    .item button{
+        margin-left:100px;
+    }
+
+    </style>
+  
+</head>
+<body>
+    <div class="title w">
+        <p>宠物之家——动物资助领养平台管理系统</p></div>
+    <div class="content w">
+    <div class="catalogue">
+        <a class="point" href="">待审核申请</a>
+        <a href="manage users.html">领养用户管理</a>
+        <a href="manage adoption.html">送养贴管理</a>
+        <a href="manage seek.html">寻回贴管理</a>
+        <a href="shipments.html">待发货订单</a>
+        <a href="manage income.html">收入管理</a>
+    </div>
+    <div class="head">
+        <div class="search">
+            <input type="text" placeholder="输入关键词" >
+            <button></button>
+        </div>
+    
+        <button class="logout">注销登录</button>
+    </div>
+    <div class="maincontent">
+        <div class="column">
+            <div class="time">申请时间</div>
+            <div class="username">申请用户名</div>
+            <div class="useraccount">申请用户账号</div>
+            <div class="type">申请类型</div>
+            <!-- <button>查看申请表</button> -->
+
+        </div>
+        <div class="item">
+            <div class="time">2021-01-03</div>
+            <div class="username">Dawn3333333</div>
+            <div class="useraccount">12345678900</div>
+            <div class="type">领养</div>
+            <button>查看申请表</button>
+
+        </div>
+      
+        <div class="item">
+            <div class="time">2022-12-29</div>
+            <div class="username">Lisa</div>
+            <div class="useraccount">13289767809</div>
+            <div class="type">寻回</div>
+            <button>查看申请表</button>
+
+
+        </div>
+    </div>
+
+    </div>
+</body>
+</html>

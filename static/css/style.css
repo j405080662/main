@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+em{
+    font-style: normal;
+}
+input::placeholder{
+    color: gray;
+
+}
+button:hover,
+input[type=submit]{
+    cursor: pointer;
+}
+
+
+.clear{
+    clear: both;
+}
+body{
+    background-color: #f3f5f7;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+button:hover{
+    cursor: pointer;
+}
+/* 版心 */
+.w{
+    width: 1200px;
+    margin: auto;
+}
+.up{
+    position: fixed;
+    bottom:0;
+    left: 50%;
+    margin-left:610px;
+}
+.header{
+
+    height: 42px;
+    margin: 30px auto;
+    background-color: #f3f5f7;
+}
+.logo{
+    float: left;
+    width: 198px;
+    height: 42px
+    }
+.nav{
+    float: left;
+    margin-left: 5px;
+
+    }
+.nav ul li{
+        float: left;
+        margin:0 5px ;
+    }
+    .nav ul li a{
+        display: block;
+        height: 42px;
+        padding: 0 10px;
+        line-height: 42px;
+        font-size: 18px;
+        color:#050505;
+    }
+    .nav ul li a:hover{
+        border-bottom: 2px solid #af5899;
+        color :#af5899
+    }
+
+    .search{
+        float: left;
+        /* margin-left: 100px; */
+        width: 260px;
+        height: 42px;
+    }
+    .search input{
+        outline: none;
+        float: left;
+        width: 190px;
+        /* height:42-2*border:1，边框会撑大盒子 */
+        height: 40px;
+        border: 1px solid #af5899;
+        border-right: none;
+        /* color:#bfbfbf; */
+        color: black;
+        font-size: 16px;
+        padding-left: 15px;
+
+    }
+    .search button{
+        float: left;
+        width: 46px;
+        height: 42px;
+        background-color:#af5899;
+        /* button默认有个边框需要手动去掉 */
+        border:0;
+        background-image: url(images/search.jpg);
+    }
+    .user{
+        float: right;
+        line-height: 42px;
+    }
+    .footer{
+        height: 300px;
+        background-color:#fff;
+    }
+    .footer .w{
+        padding-top: 35px;}
+    .copyright{
+        float: left;
+    }
+    .copyright .app{
+        display: block;
+        width: 118px;
+        height: 33px;
+        border: 2px solid #af5899;
+        margin-top: 30px;
+        margin-left: 110px;
+        text-align:center;
+        font-size: 16px;
+        color:#af5899 ;
+        line-height: 33px;
+    }
+    .links{
+        float: right;
+    }
+
+    .links dl{
+        float: left;
+        margin-left: 130px;
+
+
+    }
+    .links dl dt{
+        margin-bottom: 10px;
+        font-size: 20px;
+        color:#333;
+    }
+
+    .links dl dd{
+        margin-top: 10px;
+    }
+    .links dl dd a{
+        font-size: 16px;
+        color:gray;
+    }
+    .links dl dd a:hover{
+        color: orange;
+        text-decoration: underline;
+    }
+    .point a{
+        color:#af5899 !important ;
+        
+    }
+
+

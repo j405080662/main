@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购物资助中心 购物车</title>
+    <link rel="stylesheet" href="myindex.css">
+    <style>
+        a{
+            color: black;
+        }
+        .item{
+            /* width: 1000px;
+            height: 200px;
+            background-color: blue; */
+            /* display: flex; */
+            padding-left: 10px;
+            padding-top: 20px;
+            height: 140px;
+            border: 1px solid rgb(204, 204, 204);
+        }
+        .item_checkbox{
+            float: left;
+        }
+        .item_img{
+            float: left;
+            width: 100px;
+            height: 100px;
+            background-color: burlywood;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .describe,
+        .price,
+        .num_control,
+        .item_total_price{
+            margin-top: 10px;
+            float: left;
+            margin-left: 80px;
+        }
+        .describe{
+            width: 130px;
+            font-weight: 320;
+        }
+        .item_total_price{
+            color:  rgb(255, 68, 0);
+        }
+        .item_delete{
+            float: left;
+            margin-top: 52px;
+            margin-left: 150px;
+        }
+        .item_delete:hover{
+            color: rgb(255, 68, 0);
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .num{
+            float: left;
+            width: 50px;
+            height: 20px;
+        }
+        .num_minus,
+        .num_plus{
+            float: left;
+            width: 15px;
+            height: 24px;
+            background-color:lightgrey;
+
+        }
+        .num_minus:hover,
+        .num_plus:hover
+        {
+            cursor: pointer;
+        }
+        .checkout{
+            position: sticky;
+            bottom:0;
+            /* display: flex; */
+            clear: both;
+            width: 1000px;
+            height:50px;
+            line-height:50px;
+            background-color: lightgray;
+        }
+        .checkout div
+        {
+            display: inline-block;
+            margin-left:50px;
+        }
+        .checkout div:first-of-type{
+            margin-left: 400px;
+        }
+        .total_checkbox,
+        .total,
+        .delete{
+            margin-left: 30px;
+        }
+        .total:hover,
+        .delete:hover{
+            color: rgb(255, 68, 0);
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .total_num,
+        .total_price{
+            font-size: 20px;
+            margin-left: 5px;
+            margin-right: 5px;
+            color: rgb(255, 68, 0) ;
+        }
+        .checkout_button{
+            position: absolute;
+            right: 0;
+            width: 100px;
+            text-align: center;
+            font-size: 20px;
+            background-color: rgb(255, 68, 0) ;
+        }
+        .checkout_button:hover{
+            cursor: pointer;
+            background-color: rgb(242, 45, 0);
+        }
+        
+
+
+    </style>
+
+</head>
+<body>
+    <div class="plusheader">
+        <div class="header w">
+            <div class="logo">
+                <img src="images/logo.png">
+            </div>
+            <div class="nav">
+                <ul>
+                    <li class="point"><a href="myindex.html">我的首页</a><li></li>
+                    <li><a href="personaldata.html">账户设置</a><li>              
+                </ul>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="输入关键词" >
+                <button></button>
+            </div>
+            <button class="logout">注销登录</button>
+      </div>
+        </div>
+        <div class="content w">
+            <div class="catalogue">
+                <ul class="adopt">
+                    <li>领养中心</li>
+                    <li><a href="applyed.html">已申请</a></li>
+                    <li><a  href="adopted.html">已领养</a></li>
+                    <li><a  href="published.html">已发布</a></li>
+                    <li><a  href="delivered.html">已送养</a></li>
+                    <!-- <li><a  href="">领养日志</a></li> -->
+                </ul>
+                <ul class="seek">
+                    <li>寻回中心</li>
+                    <li><a  href="myseek.html">我的寻找</a></li>
+                </ul>
+                <ul class="aid">
+                    <li>购物资助中心</li>
+                    <li class="point"><a href="">购物车</a></li>
+                    <li><a href="myorder.html">我的订单</a></li>
+                    <!-- <li><a href="">已付款</a></li>
+                    <li><a href="">已发货</a></li>
+                    <li><a href="">已完成</a></li> -->
+                </ul>
+            </div>
+            <div class="maincontent">
+                <div class="item">
+                    <div>
+                        <input class="item_checkbox" type="checkbox">
+                    </div>
+                    <div>
+                        <span class="item_img"></span>
+                    </div>
+                    <div class="describe"> 这里是商品描述这里是商品描述这里是商品描述</div>
+                    <em class="price">￥300</em>
+                     <div class="num_control">
+                         <span class="num_minus">-</span>
+                         <input class="num" type="number" value="1">
+                         <span class="num_plus">+</span>
+                     </div>
+                     <em class="item_total_price">￥300</em>
+                     <div class="item_delete">删除</div>
+
+                </div>
+                <div class="item">
+                    <div>
+                        <input class="item_checkbox" type="checkbox">
+                    </div>
+                    <div>
+                        <span class="item_img"></span>
+                    </div>
+                    <div class="describe"> 这里是商品描述这里是商品描述这里是商品描述</div>
+                    <em class="price">￥300</em>
+                     <div class="num_control">
+                         <span class="num_minus">-</span>
+                         <input class="num" type="number">
+                         <span class="num_plus">+</span>
+                     </div>
+                     <em class="item_total_price">￥300</em>
+                     <div class="item_delete">删除</div>
+
+                </div>
+                <div class="item">
+                    <div>
+                        <input class="item_checkbox" type="checkbox">
+                    </div>
+                    <div>
+                        <span class="item_img"></span>
+                    </div>
+                    <div class="describe"> 这里是商品描述这里是商品描述这里是商品描述</div>
+                    <em class="price">￥300</em>
+                     <div class="num_control">
+                         <span class="num_minus">-</span>
+                         <input class="num" type="number">
+                         <span class="num_plus">+</span>
+                     </div>
+                     <em class="item_total_price">￥300</em>
+                     <div class="item_delete">删除</div>
+
+                </div>
+                <div class="item">
+                    <div>
+                        <input class="item_checkbox" type="checkbox">
+                    </div>
+                    <div>
+                        <span class="item_img"></span>
+                    </div>
+                    <div class="describe"> 这里是商品描述这里是商品描述这里是商品描述</div>
+                    <em class="price">￥300</em>
+                     <div class="num_control">
+                         <span class="num_minus">-</span>
+                         <input class="num" type="number">
+                         <span class="num_plus">+</span>
+                     </div>
+                     <em class="item_total_price">￥300</em>
+                     <div class="item_delete">删除</div>
+
+                </div>
+
+                <div class="checkout">
+                    
+                        <input class="total_checkbox" type="checkbox">
+                        <span class="total">全选</span>
+                        <span class="delete">删除</span>
+                        <div>已选商品<em class="total_num">0</em>件
+                        </div>
+                        <div>合计
+                            <em class="total_price">0.00</em>
+                        </div>
+                        <a class="checkout_button" href="pay.html">结算</a>
+                                            
+                </div>
+            </div>
+        </div>
+    
+    
+</body>
+</html>

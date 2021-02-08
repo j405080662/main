@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>领养中心 已领养</title>
+    <link rel="stylesheet" href="myindex.css">
+    <style>
+        a{
+        color: white;
+        }
+        .item{
+            /* width: 1000px;
+            height: 200px;
+            background-color: blue; */
+            /* display: flex; */
+            padding-left: 10px;
+            padding-top: 10px;
+            height: 160px;
+            border: 1px solid rgb(204, 204, 204);
+        }
+
+        .item img{
+            float: left;
+            width: 150px;
+            height: 150px;
+            background-color: burlywood;
+            margin-left: 10px;
+            margin-right:0px;
+        }
+        .info{
+            float: left;
+            margin-left: 150px;
+        }
+        .info li{
+            margin-top: 5px;
+        }
+        .title{
+            font-size: 20px;
+            font-weight:550;
+            margin: 0 auto;
+        }
+        .name,
+        .age,
+        .species,
+        .ster,
+        .other{
+            display: inline;
+        }
+   
+        .time{
+            float: left;
+            margin-left:50px;
+            margin-top: 60px;
+            color: red;
+        }
+        .item button{
+            float: left;
+            padding: 5px 10px;
+            margin-top: 65px;
+            margin-left: 60px;
+            background-color: rgb(102,182,255);
+            color: white;
+            border: none;
+            border-radius: 3px;
+        }
+        .item button:hover{
+            background-color: rgb(17,138,219);
+        }
+      
+       
+    
+        
+        
+
+
+    </style>
+
+</head>
+<body>
+    <div class="plusheader">
+        <div class="header w">
+            <div class="logo">
+                <img src="images/logo.png">
+            </div>
+            <div class="nav">
+                <ul>
+                    <li class="point"><a href="myindex.html">我的首页</a><li></li>
+                    <li><a href="personaldata.html">账户设置</a><li>              
+                </ul>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="输入关键词" >
+                <button></button>
+
+            </div>
+            <button class="logout">注销登录</button>
+      </div>
+        </div>
+        <div class="content w">
+            <div class="catalogue">
+                <ul class="adopt">
+                    <li>领养中心</li>
+                    <li ><a href="applyed.html">已申请</a></li>
+                    <li class="point"><a  href="">已领养</a></li>
+                    <li ><a  href="published.html">已发布</a></li>
+                    <li ><a  href="delivered.html">已送养</a></li>
+                    <!-- <li><a  href="">领养日志</a></li> -->
+                </ul>
+                <ul class="seek">
+                    <li>寻回中心</li>
+                    <li><a  href="myseek.html">我的寻找</a></li>
+        
+                </ul>
+                <ul class="aid">
+                    <li>购物资助中心</li>
+                    <li ><a href="trolley.html">购物车</a></li>
+                    <li><a href="myorder.html">我的订单</a></li>
+                    <!-- <li><a href="">已付款</a></li>
+                    <li><a href="">已发货</a></li>
+                    <li><a href="">已完成</a></li> -->
+                </ul>
+            </div>
+            <div class="maincontent">
+                <div class="item">
+                    <img>
+                    <!-- <div>
+                        <span class="item_img"></span>
+                    </div> -->
+                    <div class="info">
+                        <div class="title">
+                            领养贴的标题
+                        </div>
+                        <li>
+                            <em>名字：</em>
+                            <div class="name">宠物名字</div>
+                        </li>
+                        <li>
+                            <em>品种：</em>
+                            <div class="species">宠物品种</div>
+                        </li>
+                        <li>
+                            <em>年龄：</em>
+                            <div class="age">宠物年龄</div>
+                        </li>
+                        <li>
+                            <em>性别：</em>
+                            <div class="age">宠物性别</div>
+                        </li>
+                        <li>
+                            <em>是否绝育：</em>
+                            <div class="ster">宠物绝育情况</div>
+                        </li>
+                  
+        
+                    </div>
+                    <!-- 状态：等待审核，成功发布 未成功发布 -->
+                   
+                   
+                  
+            
+                        <div class="time">领养时间：2021年2月2日</div>
+                    
+                    <button class="log"><a href="log.html">填写领养日志</a></button>
+
+                </div>
+              
+    
+</body>
+</html>

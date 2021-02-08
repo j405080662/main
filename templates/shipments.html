@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>待发货订单</title>
+    <link rel="stylesheet" href="admin.css">
+    <style>
+    .item,
+    .column{
+        height: 30px;    
+        width: 1020px;
+        line-height: 30px;
+        border: solid 1px gray;
+        margin-left: 10px;
+    }
+    .column{
+        height: 40px;
+        line-height: 40px;
+        font-weight: 600;
+        color:rgb(17,138,219);
+    
+    }
+    .num{
+        width: 100px;
+        margin-left: 10px;
+   
+
+    }
+
+    .useraccount{
+        width: 150px;
+    }
+    .useraccount{
+        width: 150px;
+    }
+    .info{
+        width: 200px;
+    }
+    .address{
+        width: 470px;
+    }
+    .item button{
+     
+            padding: 5px 10px;
+          
+            background-color: rgb(102,182,255);
+            color: white;
+            border: none;
+            border-radius: 3px;
+            margin-left: 5px;
+        }
+        .item button:hover{
+            background-color: rgb(17,138,219);
+        }
+    .num,
+    .info,
+    .useraccount,
+    .address,
+    .item button{
+        float: left;
+    }
+    .info,
+    .useraccount,
+    .address,
+    .item button{
+        margin-left:5px;
+    }
+    </style>
+</head>
+<body>
+    <div class="title w">
+        <p>宠物之家——动物资助领养平台管理系统</p></div>
+    <div class="content w">
+    <div class="catalogue">
+        <a href="check.html">待审核申请</a>
+        <a  href="manage users.html">领养用户管理</a>
+        <a  href="manage adoption.html">送养贴管理</a>
+        <a href="manage seek.html">寻回贴管理</a>
+        <a  class="point" href="">待发货订单</a>
+        <a href="manage income.html">收入管理</a>
+    </div>
+    <div class="head">
+        <div class="search">
+            <input type="text" placeholder="输入关键词" >
+            <button></button>
+        </div>
+    
+        <button class="logout">注销登录</button>
+    </div>
+    <div class="maincontent">
+
+    
+        <div class="column">
+            <div class="num">订单号</div>
+            <div class="useraccount">用户账号</div>
+            <div class="info">订单信息</div>
+
+            <div class="address">地址</div>
+
+        </div>
+        <div class="item">
+            <div class="num">202102061</div>
+         
+            <div class="useraccount">12345678909</div>
+            <div class="info">博纳天纯狗粮11kg</div>        
+            <div class="address">四川省成都市青羊区电科院 小明132818679091</div>
+            <button>已发货</button>
+        </div>
+
+
+
+    
+    </div>
+</body>
+</html>

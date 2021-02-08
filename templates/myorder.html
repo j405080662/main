@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购物资助中心 我的订单</title>
+    <link rel="stylesheet" href="myindex.css">
+    <style>
+        .item{
+            
+            height: 250px;
+            border: 1px solid rgb(204, 233, 248);
+        }
+        .hurdle{
+            height:40px ;
+            line-height: 40px;
+            background-color: rgb(204, 233, 248);
+           
+
+        }
+        .ordertime{
+            font-size: 19px;
+            margin-left: 14px;
+
+        }
+        .info img{
+            float: left;
+            width: 170px;
+            height: 170px;
+         
+            background-color: burlywood;
+            margin-top: 20px;
+            margin-left: 10px;
+           
+          
+        }
+        .describe{
+            float: left;
+            width: 130px;
+            font-weight: 320;
+            margin-left: 50px;
+            margin-top: 30px;
+        }
+        .price,
+        .num,
+        .totalprice{
+            float: left;
+            margin-left: 50px;
+            margin-top: 30px;
+        }
+        .state{
+            float: left;
+            margin-left: 90px;
+            margin-top: 80px;
+            color: red;
+        }
+        .item button{
+            float: left;
+            margin-left: 90px;
+            margin-top: 80px;
+            padding: 5px 10px;
+            background-color: rgb(102,182,255);
+            color: white;
+            border: none;
+            border-radius: 3px;
+        }
+        .item button:hover{
+            background-color: rgb(17,138,219);
+        }
+    
+    
+        
+        
+
+
+    </style>
+
+</head>
+<body>
+    <div class="plusheader">
+        <div class="header w">
+            <div class="logo">
+                <img src="images/logo.png">
+            </div>
+            <div class="nav">
+                <ul>
+                    <li class="point"><a href="myindex.html">我的首页</a><li></li>
+                    <li><a href="personaldata.html">账户设置</a><li>              
+                </ul>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="输入关键词" >
+                <button></button>
+            </div>
+            <button class="logout">注销登录</button>
+      </div>
+        </div>
+        <div class="content w">
+            <div class="catalogue">
+                <ul class="adopt">
+                    <li>领养中心</li>
+                    <li ><a href="applyed.html">已申请</a></li>
+                    <li><a  href="adopted.html">已领养</a></li>
+                    <li ><a  href="published.html">已发布</a></li>
+                    <li class="point"><a  href="">已送养</a></li>
+                    <!-- <li><a  href="">领养日志</a></li> -->
+                </ul>
+                <ul class="seek">
+                    <li>寻回中心</li>
+                    <li><a  href="myseek.html">我的寻找</a></li>
+                </ul>
+                <ul class="aid">
+                    <li>购物资助中心</li>
+                    <li ><a href="trolley.html">购物车</a></li>
+                    <li class="point"><a href="myorder.html">我的订单</a></li>
+                   
+                </ul>
+            </div>
+            <div class="maincontent">
+                <div class="item">
+                    <div class="hurdle">
+                        <p class="ordertime">2021年2月2日（订单付款的时间）</p>
+                    </div>
+                    <div class="info">
+                        <img>
+                        <div class="describe">这里是商品描述这里是商品描述这里是商品描述</div>
+                        <div class="price">
+                            ￥300
+                        </div>
+                        <div class="num">
+                            1
+                        </div>
+                        <div class="totalprice">￥300</div>
+                    </div>
+                    <!-- 状态:已支付、商家发货后为已发货，确认收货后为已收货 -->
+                    <div class="state">
+                        已发货
+                    </div>
+                    <button>确认收货</button>
+                </div>
+              
+    
+</body>
+</html>

@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+em{
+    font-style: normal;
+}
+.clear{
+    clear: both;
+}
+body{
+    background-color: #f3f5f7;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+button:hover{
+    cursor: pointer;
+}
+/* 版心 */
+.w{
+    width: 1200px;
+    margin: auto;
+}
+.up{
+    position: fixed;
+    bottom:0;
+    left: 50%;
+    margin-left:610px;
+}
+.plusheader{
+    overflow: hidden;
+    height: 80px;
+    background-color:white;
+
+}
+.header{
+
+    height: 42px;
+    margin:19px auto;
+    background-color: white;
+}
+.logo{
+    float: left;
+    width: 198px;
+    height: 42px
+    }
+.nav{
+    float: left;
+    margin-left: 40px;
+
+    }
+.nav ul li{
+        float: left;
+        margin:0 15px ;
+    }
+
+    .nav ul li a{
+        display: block;
+        height: 42px;
+        padding: 0 10px;
+        line-height: 42px;
+        font-size: 18px;
+        color:#050505;
+    }
+    .nav ul li a:hover{
+        border-bottom: 2px solid #af5899;
+        color :#af5899
+    }
+    .search{
+        float: left;
+        margin-left: 180px;
+        width: 260px;
+        height: 42px;
+    }
+    .search input{
+        outline: none;
+        float: left;
+        width: 190px;
+        /* height:42-2*border:1，边框会撑大盒子 */
+        height: 40px;
+        border: 1px solid #af5899;
+        border-right: none;
+        /* color:#bfbfbf; */
+        color: black;
+        font-size: 16px;
+        padding-left: 15px;
+
+    }
+    .search button{
+        float: left;
+        width: 46px;
+        height: 42px;
+        background-color:#af5899;
+        /* button默认有个边框需要手动去掉 */
+        border:0;
+        background-image: url(images/search.jpg);
+    }
+    .logout{
+        float: right;
+        border: none;
+        background-color: white;
+        font-size: 18px;
+        color: orange;
+        margin-top: 20px;
+        /* margin-left: 705px; */
+    }
+    .logout:hover{
+        color:red;
+    }
+    .content{
+      width: 1200px;
+        background-color: yellow;
+
+    }
+    .catalogue{
+        float: left;
+        width: 200px;
+        height: 100%;
+        /* background-color: white; */
+        /* background-color: violet; */
+    }
+    .catalogue ul{
+        /* background-color: white; */
+        /* border-bottom: 1px solid #af5899; */
+        margin-top: 20px;
+
+    }
+    .catalogue ul li{
+        margin-bottom: 18px;
+        margin-left: 20px;
+        font-size: 18px;
+
+    }
+    .catalogue ul li:first-child{
+        font-weight: 550;
+        font-size: 20px;
+    }
+    .catalogue ul li a{
+        color:#050505;
+    }
+    .catalogue ul li a:hover{
+        color:#af5899;
+    }
+    .point a{
+        color:#af5899 !important ;
+    }
+    .maincontent{
+        /* position: relative; */
+        float: left;
+        width: 1000px;
+
+        /* height: 600px; */
+        /* background-color: lightcoral; */
+    }
+    
