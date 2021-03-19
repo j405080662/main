@@ -20,7 +20,7 @@
         body{
             /* width:100%;
             height: 100%; */
-            background-image: url("images/loginbg.jpg");
+            background-image: url("../static/images/loginbg.jpg");
             background-size:cover;
             background-repeat: no-repeat;
 
@@ -85,9 +85,8 @@
     </style>
 </head>
 <body>
-
     <div class="register">
-        <form>
+        <form method="post" onsubmit="return false" action="##">
             <ul>
                 <li>
                     <em>账号:</em>
@@ -100,13 +99,12 @@
                 </li>
                 <li>
                     <em>昵称:</em>
-                    <input type="text" required="required">
+                    <input type="text" name='name' required="required">
                 </li>
                 <li>
                     <em>性别:</em>
                         <input type="radio" name="sex" value="male"><em>男</em>
-                    <input type="radio" name="sex" value="female"><em>女</em>
-
+						<input type="radio" name="sex" value="female"><em>女</em>
                 </li>
                 <li>
                     <em>生日:</em>
@@ -118,16 +116,35 @@
                 </li>
                 <li>
                     <em>确认密码:</em>
-                    <input type="text" required="required">
+                    <input type="text" name='passWord' required="required">
                 </li>
                 <!-- <li>
                     <input type="submit" value="注册">
                 </li> -->
-                <input type="submit" value="注册">
+                <input type="submit"  value="注册">
             </ul>
         </form>
-
+		<iframe class="admin_ups" name="admin_ups" style="display:none"> </iframe>
     </div>
+	<script src="../static/lib/jquery.js"></script>
+    <script type="text/javascript">
+        $(':submit').click(function(){
+            alert('asdda')
+            $.ajax({
+                url:'http://127.0.0.1:5000/register',
+                data:{},
+                                    dataType:'json',
+                                    method:'POST',
+                                    success:function(res){
+                                        console.log(res)
+                                        location.reload()
 
+                                    }
+                                })
+
+        })
+
+    </script>
+{#	<script src="../static/js/register.js"  type="module"></script>#}
 </body>
 </html>
